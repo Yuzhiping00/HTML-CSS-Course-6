@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--author:Zhiping Yu,000822513-->
+		<title>Sandy and Leslie's apartment</title>
+		<link href="apartment_layout.css" rel="stylesheet" type="text/css"/>
+		<link href="mobile.css" rel="stylesheet" type="text/css" media="screen"/>
+		<style>
+			*{
+				padding:0px;
+				margin:0px;
+			}
+			
+			h2{
+				color:#31669C;
+				background-color:rgb(173,216,229);
+				padding-left:10px;
+				margin-bottom:15px;
+				padding-top:5px;
+				padding-bottom:5px;
+				margin-top:10px;
+			
+			}
+			@media print{
+				header img{
+					display:none;
+					page-break-before:avoid;
+				}
+				
+			}
+			
+			
+		</style>	
+	</head>
+	<body>
+		<header>
+			<h1>Sandy and Leslie's Apartment</h1>
+			<h5>Click a room for a detailed view.</h5>
+			<img src="images/apartmentfloorplan.jpg" alt="apartment" usemap="#Apartment" />
+			<map name="Apartment">
+				<area shape="rect" coords="51,2,192,160" href="bedroom.html" alt="bedroom1" title="bedroom1" />
+				<area shape="rect" coords="204,10,356,163" href="bedroom.html" alt="bedroom2" title="bedroom2" />
+				<area shape="circle" coords="413,136,50" href="diningroom.html" alt="dinningroom" title="diningroom" />
+				<area shape="rect" coords="246,235,396,394" href="kitchen.html" alt="kitchen" title="kitchen" />
+				<area shape="poly" coords="411,193,480,166,526,175,544,392,422,392,411,193" href="livingroom.html" alt="livingroom" title="livingroom" />
+				<area shape="rect" coords="51,0,594,406" href="apartment.html" alt="apartment" title="apartment" />
+			</map>	
+		</header>
+		<nav>
+			<a href="apartment.html">Apartment</a>
+			<a href="bedroom.html">Bedroom 1</a>
+			<a href="bedroom.html">Bedroom 2</a>
+			<a href="diningroom.html">Dining Room</a>
+			<a href="kitchen.html">Kitchen</a>
+			<a id ="livingroom" href="livingroom.html">Living Room</a>	
+		</nav>
+		<section>
+			<div id="left">
+				<h2>Survey</h2>
+				<form action="https://csunix.mohawkcollege.ca/tooltime/showit.pl" method="post">
+					<input name="formname" type="hidden" value="Zhiping Yu's choice" />
+					<div id="info">
+						<label>How do you find out this apartment? Check any that apply:</label>
+					</div>
+					<div id="check">
+						<input name="websearch" value="yes" id="web" type="checkbox" />
+						<label for="web">Web search</label>
+						
+						
+						<input name="Friend" value="yes" id="friend" type="checkbox" />
+						<label for="friend">Friend</label>
+						
+						
+						<input name="Newspaper" value="yes" id="news" type="checkbox" />
+						<label for="news">Newspaper</label>
+					</div>
+					<div id="submission">
+						<input value="Submit" type="submit" />
+						<input value="Reset Form" type="reset" />
+					</div>
+				</form>
+				<div id="audio">		
+					<h2>welcome Message</h2>
+					<audio controls>
+						<source src="images/apartment.mp3" type="audio/mp3" />	
+					</audio>
+					<p>Transcript:Hello.Welcome to our apartment.You"ll really enjoy living 
+						here.The rooms are spacious and the apartment building amenities are fantastic.
+						We look forward to hearing from you!
+					</p>
+				</div>
+				
+			</div>
+			<div id="middle">
+				<h2>Apartment services:</h2>
+				<div id="table">
+					<table>
+						<thead>
+							<tr>
+								<th>Service</th>
+								<th>Day/Hours</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Gym</td>
+								<td rowspan="2">Monday-Friday 6am-10pm<br/>
+									Saturday 8am-8pm<br/>
+									Sunday 8am-5pm
+								</td>
+							</tr>
+							<tr>
+								<td>Pool</td>
+							</tr>
+							<tr>
+								<td>Laundry</td>
+								<td>24/7</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+							<td colspan="2">Please do not allow people you do not
+							know to use these facilities.
+							</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+			<div id="right" >
+				<h2>Location</h2>
+				<figure>
+					<img src ="images/location.png" alt="map" />
+				</figure>
+			</div>
+		</section>
+		<h2>Gallery</h2>
+		<div id="gallery">
+			<div class="item">
+				<h3>Balcony</h3>
+				<img src="images/thumbnails/balcony_sm.jpg" alt="balcony" />
+			</div>
+			<div class="item">
+				<h3>Bathroom</h3>
+				<img src="images/thumbnails/bathroom_sm.jpg" alt="bathroom" />
+			</div>
+			<div class="item">
+				<h3>Bedroom</h3>
+				<img src="images/thumbnails/bedroom_sm.jpg" alt="bedroom" />
+			</div>
+			<div class="item">
+				<h3>Dining Room</h3>
+				<img src="images/thumbnails/diningroom_sm.jpg" alt="diningroom" />
+			</div>
+			<div class="item">
+				<h3>Kitchen</h3>
+				<img src="images/thumbnails/kitchen_sm.jpg" alt="kitchen" />
+			</div>
+			<div class="item">
+				<h3>Living Room</h3>
+				<img src="images/thumbnails/livingroom_sm.jpg" alt="livingroom" />
+			</div>
+		</div>
+		<footer>
+			<p>For more information contact:<a href="mailto:SandyAndLeslie@example.com">SandyAndLeslie@example.com</a></p>
+		
+			<p id="name">&copy;Sandy and Leslie 2020</p>
+			
+		</footer>
+	</body>
+</html>

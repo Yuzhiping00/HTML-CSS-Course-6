@@ -1,0 +1,48 @@
+/*Author:Zhiping Yu,Student#:000822513*/
+
+/*Body Style*/
+
+	body{
+		font-family:Verdana, Geneva,Times,serif;
+		width:95%;
+		margin:10px auto;
+	}
+	
+/*Header Style*/
+	header {
+		text-align:center;
+		padding-top:10px;	
+	}
+	header h1{
+		color:#31669C;
+		margin-bottom:20px;
+	}
+	header h5{
+		font-size:0.8em;
+		margin-bottom:10px;
+	}
+/*Navigation Style*/
+	nav{
+		text-align:center;
+		margin-top:10px;
+	}
+	nav a{
+		padding-right:10px;
+		border-right:1px solid black;
+		vertical-align:middle;
+				
+	}
+	a#livingroom{
+				
+		border:none;
+	}
+/*Footer Style*/
+	footer{
+		text-align:center;
+		margin-top:30px;
+		margin-bottom:10px;
+		font-size:0.8em;
+	}
+
+	
+	

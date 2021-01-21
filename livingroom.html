@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<!--author:Zhiping Yu,000822513-->
+		<title>Sandy and Leslie's apartment</title>
+		<link href="apartment_layout.css" rel="stylesheet" type="text/css" />
+		<style>
+			*{
+				padding:0px;
+				margin:0px;
+			}
+			header h5{
+				display:none;
+	
+			}
+			nav a{
+				padding-right:10px;
+				border-right:1px solid black;
+				vertical-align:middle;
+				
+			}
+			a#livingroom{
+				
+				border:none;
+			}
+			@media only screen and (max-width:600px){
+				header h5{
+					display:none;
+		
+				}
+	
+			}
+			h2{
+				color:#31669C;
+				background-color:rgb(173,216,229);
+				padding-left:10px;
+				margin-bottom:15px;
+				padding-top:5px;
+				padding-bottom:5px;
+				margin-top:10px;
+			
+			}
+			h2#rooms{
+				text-align:center;
+			}
+			figure{
+				text-align:center;
+			}
+			
+			table{
+				border-collapse:collapse;
+			}
+			table thead{
+				background-color:rgb(204,204,204);	
+			}
+			table th{
+				
+				border:2px solid rgb(179,179,179);
+				text-align:left;
+				padding:10px;
+				
+			}
+			table td{
+				border:2px solid rgb(179,179,179);
+				padding:10px 5px;
+			
+			}
+			table tfoot{
+				background-color:rgb(255,255,204);	
+			}
+			footer{
+				text-align:left;
+				margin-top:15px;
+				margin-bottom:60px;
+			}
+			footer p#bottom{
+				margin-top:20px;
+			}
+			
+			
+		</style>	
+	</head>
+	<body>
+		<header>
+			<h1>Sandy and Leslie's Apartment</h1>
+			<h5>Click a room for a detailed view.</h5>
+			<img src="images/apartmentfloorplan.jpg" alt="apartment" usemap="#Apartment" />
+			<map name="Apartment">
+				<area shape="rect" coords="51,2,192,160" href="bedroom.html" alt="bedroom1" title="bedroom1" />
+				<area shape="rect" coords="204,10,356,163" href="bedroom.html" alt="bedroom2" title="bedroom2" />
+				<area shape="circle" coords="413,136,50" href="diningroom.html" alt="dinningroom" title="diningroom" />
+				<area shape="rect" coords="246,235,396,394" href="kitchen.html" alt="kitchen" title="kitchen" />
+				<area shape="poly" coords="411,193,480,166,526,175,544,392,422,392,411,193" href="livingroom.html" alt="livingroom" title="livingroom" />
+				<area shape="rect" coords="51,0,594,406" href="apartment.html" alt="apartment" title="apartment" />
+			</map>	
+		</header>
+		<nav>
+			<a href="apartment.html">Apartment</a>
+			<a href="bedroom.html">Bedroom 1</a>
+			<a href="bedroom.html">Bedroom 2</a>
+			<a href="diningroom.html">Dining Room</a>
+			<a href="kitchen.html">Kitchen</a>
+			<a id ="livingroom" href="livingroom.html">Living Room</a>	
+		</nav>
+		<h2 id="rooms">Living Room Detail</h2>
+		<figure>
+			<img src="images/livingroom_lg.jpg" alt="livingroom" title="livingroom" />
+		</figure>
+		
+		<h2>Apartment services:</h2>
+		<div id="table">
+			<table>
+				<thead>
+					<tr>
+						<th>Service</th>
+						<th>Day/Hours</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Gym</td>
+						<td rowspan="2">Monday-Friday 6am-10pm<br/>
+							Saturday 8am-8pm<br/>
+							Sunday 8am-5pm
+						</td>
+					</tr>
+					<tr>
+						<td>Pool</td>
+					</tr>
+					<tr>
+						<td>Laundry</td>
+						<td>24/7</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+					<td colspan="2">Please do not allow people you do not
+					know to use these facilities.
+					</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<footer>
+			<p>For more information contact:<a href="mailto:SandyAndLeslie@example.com">SandyAndLeslie@example.com</a></p>
+			<p id="bottom">&copy;Sandy and Leslie 2020</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,230 @@
+/*Author:Zhiping Yu,Student#:000822513*/
+
+body{
+		font-family:Verdana, Geneva,Times,serif;
+		width:95%;
+		margin:10px auto;
+	}
+
+/*for mobile phones */
+
+@media only screen and (max-width:600px) {
+	
+	header > h5{
+		display:none;
+		
+	}
+	header > img, header> map{
+		display:none;
+	}
+	nav a{
+		display:block;
+		text-align:center;
+		margin-bottom:15px;
+		border:none;
+		
+	}
+	nav{
+		margin-bottom:30px;
+	}
+	div#left, div#middle, div#right{
+		width:100%;
+	}
+	div#info, div#check{
+		margin-bottom:10px;
+		
+	}
+	div#submission{
+		margin-bottom:40px;
+			
+		
+	}
+	div#submission input{
+		background-color:rgb(204,204,204);
+		padding:5px 10px;
+		
+	}
+	div#audio p{
+		margin-top:15px;
+		margin-bottom:30px;
+		
+	}
+	div#right{
+		margin-bottom:20px;
+		margin-top:20px;
+		
+	}
+	table{
+		border-collapse:collapse;
+	}
+	table thead{
+		background-color:rgb(204,204,204);	
+	}
+	table th{
+		
+		border:2px solid rgb(179,179,179);
+		text-align:left;
+		padding:10px;
+		
+	}
+	table td{
+		border:2px solid rgb(179,179,179);
+		padding:10px 5px;
+	
+	}
+	table tfoot{
+		background-color:rgb(255,255,204);	
+	}
+	
+	figure img{
+		width:300px;
+	
+	}
+	div#gallery{
+		display:flex;
+		flex-flow:row wrap;
+	}
+	div.item{
+		flex:0 1 auto;
+		width:200px;
+		margin:10px 20px;
+	}
+	div.item h3{
+		color:white;
+		padding:5px;
+		background-color:rgb(204,204,204);
+		margin-bottom:15px;
+		margin-top:25px;
+	}
+	footer p#name{
+		margin-top:15px;
+	}
+	header img{
+		page-break-after:avoid;
+		page-break-before:avoid;
+		
+	}
+	
+	
+}
+
+
+@media only screen and (min-width:601px){
+	
+	
+	header {
+		text-align:center;
+		padding-top:10px;	
+	}
+	header h1{
+		color:#31669C;
+		margin-bottom:20px;
+	}
+	header h5{
+		font-size:0.8em;
+		margin-bottom:10px;
+	}
+	nav{
+		text-align:center;
+		margin-top:10px;
+	}
+	nav a{
+		border-right:1px solid black;
+		padding-right:5px;
+		margin-right:5px;
+		
+		
+	}
+	footer{
+		text-align:center;
+		margin-top:30px;
+		margin-bottom:10px;
+		font-size:0.8em;
+	}
+	section{
+		display:grid;
+		grid-template-columns:4fr 3fr 300px;
+		grid-template-rows:auto;
+		column-gap:20px;
+		margin-top:10px;
+		
+			
+	}
+	div#left{
+		grid-column:1/2;
+		
+		
+	}
+	div#info{
+		margin-bottom:10px;
+	}
+	div#check{
+		margin-bottom:10px;
+	}
+	div#submission{
+		margin-bottom:30px;
+		
+	
+	}
+	div#submission input{
+		padding-left:10px;
+		padding-right:10px;
+		background-color:rgb(204,204,204);
+		padding-top:5px;
+	
+	}
+	div#audio p{
+		margin-top:10px;
+	}
+	div#middle{
+		grid-column:2/3;
+	}
+	table{
+		border-collapse:collapse;
+	}
+	table thead{
+		background-color:rgb(204,204,204);	
+	}
+	table th{
+		
+		border:2px solid rgb(179,179,179);
+		text-align:left;
+		padding:10px;
+		
+	}
+	table td{
+		border:2px solid rgb(179,179,179);
+		padding:10px 5px;
+	
+	}
+	table tfoot{
+		background-color:rgb(255,255,204);	
+	}
+	
+	div#right{
+		grid-column:3/4;
+	}
+	figure img{
+		width:300px;
+	
+	}
+	div#gallery{
+		display:flex;
+		flex-flow:row wrap;
+	}
+	div.item{
+		flex:0 1 auto;
+		width:200px;
+		margin:10px 20px;
+	}
+	div.item h3{
+		color:white;
+		padding:5px;
+		background-color:rgb(204,204,204);
+		margin-bottom:15px;
+		margin-top:25px;
+	}
+	footer p#name{
+		margin-top:15px;
+	}
+}

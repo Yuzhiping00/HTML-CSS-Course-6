@@ -1,0 +1,29 @@
+/*Author:Zhiping Yu,000822513*/
+
+/*Reset style*/
+*{
+	padding:0px;
+	margin:0px;	
+}
+
+/*Body style*/
+body{
+	width:90%;
+	margin:0px auto;
+	font-family:Arial,Geneva,Verdana,sans-serif;
+	font-size:1.2em;
+}
+
+/*Header style*/
+header{
+	background-color:/*url(images/dust.jpg);*/#BBCCDD;
+	text-align:center;	
+}
+
+/*Nav style*/
+nav{
+	background-color:#4681A4;
+	text-align:center;
+	padding-top:30px;
+	padding-bottom:10px;
+}
